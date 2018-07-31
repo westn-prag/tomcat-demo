@@ -20,14 +20,13 @@ in our Spring Boot, we chose to use a YAML (.yml) format.
 
 ## Running Spring Boot Application Through Tomcat
 Make sure that the Maven WAR dependency is specified in the Maven *pom.xml* as follows:
-'''
-<dependency>
+```<dependency>
      <groupId>org.apache.maven.plugins</groupId>
      <artifactId>maven-war-plugin</artifactId>
      <version>3.2.2</version>
      <type>maven-plugin</type>
 </dependency>
-'''
+```
 In addition, the line '<packaging>war</packaging>' should be included. 
 
 The WAR file must be generated and moved into the Tomcat webapps folder. To do so, run 'mvn clean install' within the project directory and then move the 
