@@ -1,2 +1,22 @@
 server:
-  port: 9090
+  port: 9091
+
+spring:
+  datasource:
+    platform: 'postgres'
+    url: 'jdbc:postgresql://localhost:5432/dummydb'
+    username: 'user12'
+    password: 'password123'
+
+
+#output to a temp_folder/file
+logging:
+  level:
+    org:
+      springframework: 'DEBUG'
+  file: '/home/jia/application.log'
+ # Logging pattern for the console
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
+# Logging pattern for file
+    file: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%'
