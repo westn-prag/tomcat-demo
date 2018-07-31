@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81ac7a4a-3be2-41ec-964c-75ac5dcd50d4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/SSLSetup.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pragmatics/HttpClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pragmatics/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pragmatics/MyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pragmatics/SSLClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pragmatics/SSLClientApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pragmatics/HttpClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pragmatics/RestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pragmatics/SSLClientApp$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pragmatics/SSLClientApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pragmatics/SSLClientApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SSLSetup.md" beforeDir="false" afterPath="$PROJECT_DIR$/SSLSetup.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,8 +60,8 @@
       <file leaf-file-name="SSLSetup.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SSLSetup.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state relative-caret-position="495">
+              <caret line="33" column="85" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -113,6 +101,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/HowTo.md" />
+        <option value="$PROJECT_DIR$/SSLSetup.md" />
       </list>
     </option>
   </component>
@@ -468,8 +457,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SSLSetup.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        <state relative-caret-position="495">
+          <caret line="33" column="85" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="85" />
         </state>
       </provider>
     </entry>
