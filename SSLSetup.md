@@ -39,3 +39,10 @@ Test the REST API endpoint by going to `localhost:8080/<PROJECT NAME>-1.0-SNAPSH
 [This](https://www.opencodez.com/java/implement-2-way-authentication-using-ssl.htm) is the link we used to generate certificates for Tomcat and PostgreSQL. Follow
 up until "Configure Tomcat for SSL".
 
+## Configuring PostgreSQL/Tomcat 2-way SSL
+Generate the certificates and keys necessary for 2-way SSL. We use [this](https://www.opencodez.com/java/implement-2-way-authentication-using-ssl.htm) to generate the certs and configure accordingly. Follow the linked guide until 'Configure Server blah blah '. Tomcat SSL is now configured. 
+Next is PostgreSQL SSL. Navigate to the *postgresql.conf* file in */etc/postgresql/* and edit the `ssl_cert_file =` to point to the client cert and `ssl_key_file = ` to point to the client keystore file. 
+Save and quit and PostgreSQL SSL has ben configured.
+
+Restart Tomcat server. In your browser go to `localhost:8080/?ssl=true`to make sure it works. :) 
+
