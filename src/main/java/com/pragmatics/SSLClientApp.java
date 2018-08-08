@@ -1,37 +1,17 @@
 package com.pragmatics;
 
+import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 @SpringBootApplication
 public class SSLClientApp extends SpringBootServletInitializer {
-
-//    static
-//    {
-//        System.setProperty("javax.net.debug", "all");
-//        System.setProperty("jdk.tls.client.protocols", "TLSv1.2");
-//        System.setProperty("https.protocols", "TLSv1.2");
-//        System.setProperty("javax.net.ssl.trustStore", "MyClientTest.jks");
-//        System.setProperty("javax.net.ssl.trustStorePassword", "password");
-//        System.setProperty("javax.net.ssl.keyStore",  "MyClientTest.jks");
-//        System.setProperty("javax.net.ssl.keyStorePassword", "password");
-//
-//        javax.net.ssl.HttpsURLConnection.setDefaultHostnameVerifier (
-//                new javax.net.ssl.HostnameVerifier() {
-//
-//                    public boolean verify(String hostname,
-//                                          javax.net.ssl.SSLSession sslSession) {
-//                        if (hostname.equals("localhost")) {
-//                            return true;
-//                        }
-//                        return false;
-//                    }
-//                });
-//    }
 
     @Bean
     public RestTemplate template() throws Exception{
@@ -45,6 +25,19 @@ public class SSLClientApp extends SpringBootServletInitializer {
     }
 
     public static void main(String[] args) throws Exception {
+        try {
+            int x = 0/0;
+        } catch (ArithmeticException e){
+            logger.error("ERROR");
+        }
+
         SpringApplication.run(SSLClientApp.class, args);
     }
+
+    private void run(ApplicationArguments args) throws Exception {
+        logger.info("Info Log");
+    }
+
+    private static final Logger logger = LogManager.getLogger(SSLClientApp.class);
+
 }
